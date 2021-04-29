@@ -16,7 +16,7 @@ public class JurassicPark {
         this.dbPassword = dbPassword;
     }
 
-    public List<String> checkOverpopulation () {
+    public List<String> checkOverpopulation() {
         List<String> dinosaurs = new ArrayList<>();
 
         try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
